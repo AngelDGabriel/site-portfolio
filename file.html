@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Angel Gabriel</title>
+    <title>.</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="root-container">
@@ -11,46 +12,55 @@
           <div class="barra-navegacao">
             <h2 class="titulo-navegacao">Angel Gabriel</h2>
             <div>
-              <a class="links-navegacao">Habilidades</a>
-              <a class="links-navegacao">Portfólio</a>
-              <a class="links-navegacao">Experiencias</a>
+              <a
+                class="links-navegacao"
+                onclick="onClickScrollTo('section-abilities')"
+                >Habilidades</a
+              >
+              <a
+                class="links-navegacao"
+                onclick="onClickScrollTo('section-portfolio')"
+                >Portfólio</a
+              >
+              <a
+                class="links-navegacao"
+                onclick="onClickScrollTo('section-experiences')"
+                >Experiencias</a
+              >
             </div>
-            <button>CONTATO</button>
+            <button onclick="onClickScrollTo('section-contact')">
+              CONTATO
+            </button>
           </div>
           <div class="hero-info">
             <div>
               <h1 class="hero-info-title">
-                Olá, Muito prazer! <br />
+                Ola, Muito prazer! <br />
                 Sou o Angel Gabriel
               </h1>
               <p class="hero-info-subtitle">
-                Comecei em 2023 na area de programação e tenho foco no
-                desenvolvimento web e mobile.
+                No momento estou me especializando na area de front-end e
+                mobile.
               </p>
-              <button>ENTRAR EM CONTATO</button>
+              <button onclick="onClickScrollTo('section-contact')">
+                ENTRAR EM CONTATO
+              </button>
               <div class="hero-info-icons-container">
-                <a>
+                <a onclick="onClickLink('https://github.com/AngelDGabriel')">
                   <img
                     alt="Github"
                     class="hero-info-icons-img"
                     src="https://cdn-icons-png.flaticon.com/512/733/733609.png"
                   />
                 </a>
-                <a>
+                <a onclick="onClickLink('https://www.linkedin.com/in/angel-gabriel-matos-6109b3266/')">
                   <img
                     alt="Linkedin"
                     class="hero-info-icons-img"
                     src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-192-739517.png?f=avif&w=256"
                   />
                 </a>
-                <a>
-                  <img
-                    alt="Youtube"
-                    class="hero-info-icons-img"
-                    src="https://cdn.iconscout.com/icon/free/png-512/free-youtube-1464540-1239451.png?f=avif&w=256"
-                  />
-                </a>
-                <a>
+                <a onclick="onClickLink('https://www.instagram.com/angeldgabriel')">
                   <img
                     alt="Instagram"
                     class="hero-info-icons-img"
@@ -60,11 +70,11 @@
               </div>
             </div>
             <div>
-              <img class="hero-info-image" src="foto.png" alt="Foto" />
+              <img class="hero-info-image" src="foto.jpg" alt="Foto" />
             </div>
           </div>
         </section>
-        <section class="section-abilities">
+        <section class="section-abilities" id="section-abilities">
           <h2>Habilidades</h2>
           <h2 class="verde">que domino.</h2>
           <div class="ability-cards-container">
@@ -127,14 +137,14 @@
             </div>
           </div>
         </section>
-        <section class="section-portfolio">
+        <section class="section-portfolio" id="section-portfolio">
           <h2>Portfólio</h2>
           <h2 class="verde">de projetos.</h2>
           <div class="section-portfolio-grid">
             <div class="section-portfolio-card">
               <img
                 class="section-portfolio-img"
-                src="https://cdn-icons-png.flaticon.com/512/1857/1857147.png"
+                src="projeto1.png"
                 alt="Projeto Supermercado"
               />
               <h5>Supermarket list</h5>
@@ -159,7 +169,7 @@
             <div class="section-portfolio-card">
               <img
                 class="section-portfolio-img"
-                src="https://cdn-icons-png.flaticon.com/512/1857/1857147.png"
+                src="projeto2.png"
                 alt="Projeto Booklist"
               />
               <h5>BookClub</h5>
@@ -184,7 +194,7 @@
             <div class="section-portfolio-card">
               <img
                 class="section-portfolio-img"
-                src="https://cdn-icons-png.flaticon.com/512/1857/1857147.png"
+                src="projeto1.png"
                 alt="Projeto Supermercado"
               />
               <h5>Supermarket list</h5>
@@ -208,7 +218,7 @@
             </div>
           </div>
         </section>
-        <section class="section-experiences">
+        <section class="section-experiences" id="section-experiences">
           <h2>Experiências</h2>
           <h2 class="verde">profissionais.</h2>
           <div class="section-experiences-card">
@@ -231,7 +241,7 @@
             </div>
           </div>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="section-contact">
           <h2>Como posso</h2>
           <h2 class="verde">te ajudar ?</h2>
           <p>Estou a disposição para ajudar o seu projeto ou sua empresa.</p>
@@ -241,7 +251,7 @@
               alt="E-mail icon"
               class="section-contact-item-icon"
             />
-            <p>angelkengms@gmail.com</p>
+            <a href="malito:angelkengms@gmail.com">angelkengms@gmail.com</a>
           </div>
           <div class="section-contact-item">
             <img
@@ -249,7 +259,7 @@
               alt="Phone icon"
               class="section-contact-item-icon"
             />
-            <p>11 9 9710-0743</p>
+            <a href="tel:(11) 9 9710-0743">(11) 9 9710-0743</a>
           </div>
         </section>
       </div>
@@ -258,34 +268,28 @@
       <div class="footer-content">
         <h2 class="titulo-navegacao">Angel Gabriel</h2>
         <div class="footer-social-icons-container">
-          <a>
+          <a onclick="onClickLink('https://github.com/AngelDGabriel')">
             <img
               alt="Github"
               class="hero-info-icons-img"
               src="https://cdn-icons-png.flaticon.com/512/733/733609.png"
             />
           </a>
-          <a>
+          <a onclick="onClickLink('https://www.linkedin.com/in/angel-gabriel-matos-6109b3266/')">
             <img
               alt="Linkedin"
               class="hero-info-icons-img"
               src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-192-739517.png?f=avif&w=256"
             />
           </a>
-          <a>
-            <img
-              alt="Youtube"
-              class="hero-info-icons-img"
-              src="https://cdn.iconscout.com/icon/free/png-512/free-youtube-274-761641.png?f=avif&w=256"
-            />
-          </a>
-          <a>
+          <a onclick="onClickLink('https://www.instagram.com/angeldgabriel')">
             <img
               alt="Instagram"
               class="hero-info-icons-img"
               src="https://cdn.iconscout.com/icon/free/png-512/free-instagram-1464521-1239436.png?f=avif&w=256"
             />
           </a>
+        </div>
         </div>
       </div>
     </footer>
