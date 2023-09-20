@@ -260,10 +260,10 @@ footer {
   margin-bottom: 12px;
 }
 
-.section-portfolio-card-list {
+.section-portfolio-card-links {
   display: flex;
   flex-direction: row;
-  width: 20%;
+  width: 60%;
   align-items: baseline;
   justify-content: space-between;
 }
