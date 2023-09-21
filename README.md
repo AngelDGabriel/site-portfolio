@@ -31,5 +31,5 @@ site-porfolio
 3. Open the index file with the browser:
 
 ```
-index.html
+file.html
 ```
