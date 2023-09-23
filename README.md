@@ -7,6 +7,8 @@ The main goal is create a website with my professional information.
 
 <img src="https://github.com/AngelDGabriel/site-portfolio/blob/main/preview.png" height="500"/>
 
+## Live link:
+
 ## Main concepts applied
 
 - Flexbox

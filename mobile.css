@@ -83,11 +83,21 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    margin-top: 156px;
+    margin-top: 180px;
   }
 
   .hero-info-image {
     width: 300px;
+  }
+
+  .hero-info-icons-container {
+    margin-top: 40px;
+    width: 20%;
+  }
+
+  .hero-info-icons-img {
+    width: 56px;
+    height: 56px;
   }
 
   .ability-cards-container {
@@ -166,16 +176,6 @@
 
   .footer-content {
     width: 94vw;
-  }
-
-  .hero-info-icons-img {
-    width: 56px;
-    height: 56px;
-  }
-
-  .hero-info-icons-container {
-    margin-top: 40px;
-    width: 60%;
   }
 
   .section-abilities {
