@@ -3,7 +3,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #4f4f4f;
+  background-image: linear-gradient(to right, #000000 70%, #008000);
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -28,7 +28,7 @@ h2 {
 }
 
 h2.verde {
-  color: #32cd32;
+  color: #008000;
 }
 
 h5 {
@@ -57,7 +57,7 @@ a {
 button {
   height: 56px;
   border-radius: 16px;
-  background-color: #32cd32;
+  background-color: #008000;
   border-width: 0px;
   color: #fefefe;
   font-size: 16px;
@@ -79,7 +79,6 @@ footer {
   display: flex;
   width: 100vw;
   height: 156px;
-  background-color: #a9a9a9;
   align-items: center;
   justify-content: center;
 }
@@ -159,7 +158,7 @@ footer {
   height: 100%;
   width: 402px;
   border-radius: 40px;
-  border-color: #32cd32;
+  border-color: #008000;
   border-width: 4px;
   border-style: solid;
 }
@@ -208,7 +207,7 @@ footer {
   width: 312px;
   height: 690px;
   border-width: 1px;
-  border-color: #d9d9d9;
+  border-color: #008000;
   border-radius: 12px;
   border-style: solid;
   padding-top: 16px;
@@ -221,7 +220,7 @@ footer {
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  background-color: #32cd32;
+  background-color: #008000;
   margin-bottom: 12px;
 }
 
@@ -261,7 +260,7 @@ footer {
   width: 384px;
   height: 300px;
   border-width: 2px;
-  border-color: #d9d9d9;
+  border-color: #008000;
   border-style: solid;
   border-radius: 24px;
 }
@@ -301,7 +300,6 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
   width: 800px;
-  background-color: #a9a9a9;
   border-radius: 16px;
   margin-top: 24px;
   padding: 24px;
